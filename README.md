@@ -54,6 +54,7 @@ I'm a very detail-oriented person, but I couldn't be so attached on the details 
 Some dependencies listed in `package.json` are not being used, such as Enzyme and velocity-react. This is because I was planning to use them, but didn't find the time. Maybe in the future! :P
 
 **Update (23 January, 8 PM)**: now I'm using velocity-react! :sunglasses:
+**Update (23 January, 8:40 PM)**: Enzyme is also being used! No unused dependencies anymore :sunglasses:
 
 ### Final words
 Creating this app was pretty funny! :-)
