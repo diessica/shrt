@@ -1,0 +1,169 @@
+/* General styles and generic components */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  background: #fcfbfa;
+  color: #555;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.logo, .slogan {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Montserrat';
+  text-decoration: underline;
+  font-size: 47px;
+  font-weight: 400;
+  color: #eb4a42
+}
+
+.slogan {
+  color: #aaa;
+  text-align: right;
+  font-weight: 300;
+}
+
+.table {
+  width: 100%;
+}
+
+.table thead {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.table th {
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+/* App component */
+@media (min-width: 630px) {
+  .App {
+    width: 630px;
+    margin: auto;
+  }
+}
+
+.App__header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Form component */
+.Form {
+  display: flex;
+}
+
+.Form__input {
+  flex-grow: 1;
+}
+
+.Form__button {
+  margin-left: 15px;
+}
+
+/* Button component */
+.Button, input {
+  background: #eaeaea;
+  color: #555;
+  font-family: inherit;
+  font-size: inherit;
+  border: 0;
+  padding: 12px 15px;
+  border-radius: 3px;
+  transition: opacity 250ms ease-out;
+}
+
+.Button {
+  cursor: pointer;
+}
+
+.Button:hover {
+  opacity: 0.85;
+}
+
+.Button:disabled {
+  background: #e0e0e0;
+  color: #bfbfbf;
+}
+
+.Button--primary {
+  background: #eb4a42;
+  color: #fff;
+}
+
+.Button--secondary {
+  background: transparent;
+  color: #eb4a42;
+}
+
+/* List and ListItem components */
+.List__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.List {
+  margin-top: 60px;
+}
+
+.List__visits {
+  width: 15%;
+}
+
+.List__visits,
+.List__last-seen {
+  text-align: center;
+}
+
+.List__last-seen {
+  width: 20%;
+}
+
+.List__url {
+  width: 65%;
+  max-width: 300px;
+}
+
+.ListItem td {
+  padding: 20px 0;
+}
+
+.ListItem__url-shortened {
+  cursor: pointer;
+}
+
+.ListItem__clipboard-text {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.ListItem__url-long {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+/* Helpers */
+._is-accented {
+  color: #eb4a42;
+}

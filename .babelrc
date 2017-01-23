@@ -1,0 +1,8 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    "jsx-control-statements",
+    "transform-class-properties",
+    "transform-object-rest-spread"
+  ]
+}
